@@ -237,6 +237,7 @@ const Sidebar = () => {
         <hr />
       </div>
       <br />
+      <br />
       <span className="text-xs text-gray-600 font-semibold">
         About Press Copyright <br /> Contact us Creators 
         <br />
@@ -244,6 +245,7 @@ const Sidebar = () => {
         <p className="mt-3">Terms Privacy Policy & Safety</p> How YouTube works{" "}
         <br /> Test new features
       </span>
+      <br />
       <br />
       <p className="text-xs text-gray-500 mt-3">© 2024 Learn Coding</p>
      
