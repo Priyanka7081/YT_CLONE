@@ -25,25 +25,25 @@ import { BiVideo } from "react-icons/bi";
 import { GiLinkedRings } from "react-icons/gi";
 
 const Sidebar = () => {
-    const SidebarItems = [
-        {
+  const SidebarItems = [
+    {
 
-            id: 1,
-            name: "Home",
-            icon: <GoHome />,
-        },
-        {
-            id: 2,
-            name: "Shorts",
-            icon: <SiYoutubeshorts />,
-        },
-        {
-            id: 3,
-            name: "Subscriptions",
-            icon: <MdOutlineSubscriptions />,
-        },
-    ];
-     const sidebarItems2 = [
+      id: 1,
+      name: "Home",
+      icon: <GoHome />,
+    },
+    {
+      id: 2,
+      name: "Shorts",
+      icon: <SiYoutubeshorts />,
+    },
+    {
+      id: 3,
+      name: "Subscriptions",
+      icon: <MdOutlineSubscriptions />,
+    },
+  ];
+  const sidebarItems2 = [
     {
       id: 1,
       name: "Your Channel",
@@ -64,7 +64,7 @@ const Sidebar = () => {
       name: "Your Videos",
       icon: <BiVideo />,
     },
-     {
+    {
       id: 5,
       name: "Watch later",
       icon: <MdOutlineWatchLater />,
@@ -86,7 +86,7 @@ const Sidebar = () => {
       name: "Shopping",
       icon: <HiOutlineShoppingBag />,
     },
-      {
+    {
       id: 3,
       name: "Music",
       icon: <SiYoutubemusic />,
@@ -106,7 +106,7 @@ const Sidebar = () => {
       name: "Gaming",
       icon: <IoGameControllerOutline />,
     },
-      {
+    {
       id: 7,
       name: "News",
       icon: <FaRegNewspaper />,
@@ -126,13 +126,13 @@ const Sidebar = () => {
       name: "Fashion & beauty",
       icon: <PiLightbulbLight />,
     },
-     {
+    {
       id: 11,
       name: "Padcasts",
       icon: <MdPodcasts />,
     },
   ];
-   const sidebarItems4 = [
+  const sidebarItems4 = [
     {
       id: 1,
       name: "Youtube Premium",
@@ -157,67 +157,74 @@ const Sidebar = () => {
 
 
 
-    return (
-        <div className='px-6 w-[16%] h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden mt-16'>
-            {/* HOME */}
-            <div className='space-y-3 items-center'>
-                {
-                    SidebarItems.map((item) => {
-                        return (
-                            <div className=' flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
-                                <div className='text-xl cursor-pointer'>{item.icon}</div> 
-                                <span className='cursor-pointer' >{item.name}</span>
-                            </div>
-                        );
-                    })
-                }
+  return (
+    <div className='px-6 w-[16%] h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden '>
+      {/* HOME */}
+      <div className='space-y-3 items-center'>
+        {
+          SidebarItems.map((item) => {
+            return (
+              <div
+                key={item.id}
+                className=' flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
+                <div className='text-xl cursor-pointer'>{item.icon}</div>
+                <span className='cursor-pointer' >{item.name}</span>
+              </div>
+            );
+          })
+        }
 
-            </div>
-            <br />
-            <hr />
-            {/* YOU CODE */}
-             <div className=' mt-4 space-y-3 items-center'>
-                <div className='flex items-center space-x-2'>
-                    <h1>You</h1>
-                    <FaChevronRight />
-                </div>
-                {
-                    sidebarItems2.map((item) => {
-                        return (
-                            <div className=' flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
-                                <div className='text-xl cursor-pointer'>{item.icon}</div> 
-                                <span className='cursor-pointer' >{item.name}</span>
-                            </div>
-                        );
-                    })
-                }
+      </div>
+      <br />
+      <hr />
+      {/* YOU CODE */}
+      <div className=' mt-4 space-y-3 items-center'>
+        <div className='flex items-center space-x-2'>
+          <h1>You</h1>
+          <FaChevronRight />
+        </div>
+        {
+          sidebarItems2.map((item) => {
+            return (
+              
+              <div 
+                 key={item.id}
+              className=' flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
+                <div className='text-xl cursor-pointer'>{item.icon}</div>
+                <span className='cursor-pointer' >{item.name}</span>
+              </div>
+            );
+          })
+        }
 
-            </div>
-            <br />
-            <hr />
-            {/* EXPLORE */}
+      </div>
+      <br />
+      <hr />
+      {/* EXPLORE */}
 
-              <div className=' mt-4 space-y-3 items-center'>
-                <div className=' items-center space-x-2'>
-                    <h1 className='font-semibold'>Explore</h1>
-                    
-                </div>
-                {
-                    sidebarItems3.map((item) => {
-                        return (
-                            <div className=' flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
-                                <div className='text-xl cursor-pointer'>{item.icon}</div> 
-                                <span className='cursor-pointer' >{item.name}</span>
-                            </div>
-                        );
-                    })
-                }
+      <div className=' mt-4 space-y-3 items-center'>
+        <div className=' items-center space-x-2'>
+          <h1 className='font-semibold'>Explore</h1>
 
-            </div>
-            <br />
-            <hr />
-            {/* MORE SECTION */}
-        <div className="mt-4 space-y-3 items-center">
+        </div>
+        {
+          sidebarItems3.map((item) => {
+            return (
+              <div
+                key={item.id}
+                className=' flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
+                <div className='text-xl cursor-pointer'>{item.icon}</div>
+                <span className='cursor-pointer' >{item.name}</span>
+              </div>
+            );
+          })
+        }
+
+      </div>
+      <br />
+      <hr />
+      {/* MORE SECTION */}
+      <div className="mt-4 space-y-3 items-center">
         <div className="items-center space-x-2">
           <h1 className=" font-semibold">More From YT</h1>
         </div>
@@ -239,18 +246,18 @@ const Sidebar = () => {
       <br />
       <br />
       <span className="text-xs text-gray-600 font-semibold">
-        About Press Copyright <br /> Contact us Creators 
+        About Press Copyright <br /> Contact us Creators
         <br />
-         Advertise Developers <br /> 
+        Advertise Developers <br />
         <p className="mt-3">Terms Privacy Policy & Safety</p> How YouTube works{" "}
         <br /> Test new features
       </span>
       <br />
       <br />
       <p className="text-xs text-gray-500 mt-3">© 2024 Learn Coding</p>
-     
-        </div>
-    )
+
+    </div>
+  )
 }
 
 export default Sidebar
