@@ -32,10 +32,12 @@ const Video = ({ video }) => {
                                 {video?.author?.title}
                                 {video?.author?.badges[0]?.type=== "VERIFIDE_CHANNEL"&& (<BsFillCheckCircleFill className='text-gray-600 ml-1 text-[12px] ' />)}
                             </span>
-                            <div>
+                            <div className='flex text-gray-500 text-[12px]'>
                                 <span>{`${abbreviateNumber(
                                     video?.stats?.views,2
                                 )} views`}</span>
+                                <span className='flex text-[24px] leading-none font-bold relative top-[-10px] mx-1'>.</span>
+                                <span>{video?.publishedTimeText}</span>
                             </div>
                         </div>
                     </div>

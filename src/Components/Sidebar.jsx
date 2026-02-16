@@ -158,7 +158,7 @@ const Sidebar = () => {
 
 
   return (
-    <div className='px-6 w-[16%] h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden '>
+    <div className='px-6 w-[25%] h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden '>
       {/* HOME */}
       <div className='space-y-3 items-center'>
         {

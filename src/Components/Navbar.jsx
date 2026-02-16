@@ -16,10 +16,10 @@ const Navbar = () => {
         <img src={logo} alt="Logo" className='w-25 cursor-pointer' />
       </div>
       <div className=' flex w-[35%] items-center'>
-        <div className=' flex w-[100%] px-3 py-2 border rounded-l-full '>
+        <div className=' flex w-[100%] px-4 py-2 border border-gray-400 rounded-l-full '>
           <input type="text" placeholder='Search' className='outline-none' />
         </div>
-        <button className='px-4 py-2 bg-gray-100 border rounded-r-full'> 
+        <button className='px-4 py-2 border border-gray-400  bg-gray-100 border rounded-r-full'> 
           <CiSearch size={"24px"} /></button>
         <IoMdMic 
         size={"42px"} className='ml-3 border rounded-full p-2 cursor-pointer hover:bg-gray-200 duration-200' />
